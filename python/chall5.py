@@ -1,0 +1,19 @@
+#!/usr/bin/python
+
+#Securityoverride.org Progarmming Challenge #5
+
+val="""00000000000@0000000000000000000000@000000000000000
+000@0000000000000000000000000000000000000000000000
+0000000000000000000000000000000000@000000000000000
+00000000@0000000000000000000000000000000000000@000
+0000000000000000@000000000000000000000000000000000
+"""
+final=""
+for x, line in enumerate(val.splitlines()):
+    #print "line "+str(x)+" : "
+    for y, match in enumerate(line):
+        if match == "@":
+           final += str(x+1)+"-"+str(y)+", "
+
+print final[:-2] 
+

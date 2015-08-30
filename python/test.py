@@ -15,7 +15,7 @@ for x in range(-99999, -9999): #negative range
 
 for x in range(10000, 100000): #positive range
 	for y in str(x):
-		val+=int(y)	
+		val+=int(y)
 	if pow(val,3) == x:
 		print str(x)+': '+str(val)+' ^3: '+str(pow(val,3))
 	val=0
